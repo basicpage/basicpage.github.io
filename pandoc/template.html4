@@ -30,8 +30,15 @@ $endif$
 $endif$
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.svg">
+  $for(author)$
+  <h1>$author$</h2>
+  $endfor$
 </head>
 <body>
+  <header>
+    <img src="img/profile.png" alt="My picture">
+  </header>
+  <main>
 $for(include-before)$
 $include-before$
 $endfor$
@@ -65,5 +72,6 @@ $body$
 $for(include-after)$
 $include-after$
 $endfor$
+  </main>
 </body>
 </html>
