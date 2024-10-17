@@ -43,15 +43,10 @@ header img {
   max-width: 200px;
 }
 
-header p {
-  flex: 3 300px;
-  padding: 10px;
-  margin: 10px;
-}
-
 header aside {
   display: flex;
   flex-direction: column;
+  flex: 3 300px;
 }
 
 /*** MAIN ***/
