@@ -21,3 +21,8 @@ but producing something much simpler.
   "Github Actions" instead of "Deploy from a branch" for "Source".
 
 - Fill the contents of `index.md` to your liking and it should just work.
+
+## Authors
+
+- Yannick Forster
+- Théo Winterhalter
