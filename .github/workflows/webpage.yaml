@@ -38,7 +38,7 @@ jobs:
             --toc
             --toc-depth=2
             --resource-path=.
-            index.md
+            src/index.md
 
       - name: Copy files
         run: |
