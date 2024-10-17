@@ -1,1 +1,51 @@
-/* TODO */
+:root {
+  --bg: #e3e7ed;
+  --headerbg: #bae5e5;
+}
+
+/*** GENERAL ***/
+
+* {
+  box-sizing: border-box;
+}
+
+body, div, header, footer, main, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--bgcol);
+}
+
+/*** HEADER ***/
+
+header {
+  max-width: 1200px;
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  background: var(--headerbg);
+}
+
+header img {
+  flex: 1;
+  margin: 10px;
+  max-width: 200px;
+}
+
+header p {
+  flex: 3 300px;
+  padding: 10px;
+  margin: 10px;
+}
