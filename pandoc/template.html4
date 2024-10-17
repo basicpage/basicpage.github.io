@@ -34,9 +34,14 @@ $endif$
 <body>
   <header>
     <img src="img/profile.png" alt="My picture">
-    $if(author)$
-    <h1>$author$</h1>
-    $endif$
+    <aside>
+      $if(author)$
+      <h1>$author$</h1>
+      $endif$
+      $if(shortbio)$
+      <h2>$shortbio$</h2>
+      $endif$
+    </aside>
   </header>
   <main>
     $for(include-before)$
