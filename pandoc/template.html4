@@ -42,7 +42,7 @@ $endif$
       <h2>$shortbio$</h2>
       $endif$
       $if(email)$
-      <p>✉️ $email$</p>
+      <p>✉️ <code>$email$</code></p>
       $endif$
     </aside>
   </header>

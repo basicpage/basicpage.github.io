@@ -47,6 +47,15 @@ header aside {
   display: flex;
   flex-direction: column;
   flex: 3 300px;
+  margin-left: 30px;
+}
+
+header h2 {
+  font-size: medium;
+}
+
+header p {
+  margin: 0;
 }
 
 /*** MAIN ***/
