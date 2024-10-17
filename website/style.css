@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-body, div, header, footer, main, h1, h2, h3, h4, h5, h6 {
+body, div, header, footer, main, h1, h2, h3, h4, h5, h6, img {
   margin: 0;
   padding: 0;
 }
@@ -32,9 +32,9 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding: 15px;
   background: var(--headerbg);
 }
 
