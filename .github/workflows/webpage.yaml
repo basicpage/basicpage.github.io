@@ -42,7 +42,7 @@ jobs:
 
       - name: Copy files
         run: |
-          cp -R files files
+          cp -R files website/files
 
       - name: Setup Pages
         if: github.ref_name == github.event.repository.default_branch
