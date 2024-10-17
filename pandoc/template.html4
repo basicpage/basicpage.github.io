@@ -31,7 +31,7 @@ $endif$
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.svg">
   $if(author)$
-  <h1>$author$</h2>
+  <h1>$author$</h1>
   $endif$
 </head>
 <body>

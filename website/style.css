@@ -1,6 +1,6 @@
 :root {
   --bg: #e3e7ed;
-  --headerbg: #bae5e5;
+  --headerbg: #cef1f1;
 }
 
 /*** GENERAL ***/
@@ -48,4 +48,12 @@ header p {
   flex: 3 300px;
   padding: 10px;
   margin: 10px;
+}
+
+/*** MAIN ***/
+
+main {
+  width: auto;
+  margin-top: 20px;
+  max-width: 1200px;
 }
