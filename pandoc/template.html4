@@ -30,13 +30,13 @@ $endif$
 $endif$
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.svg">
-  $if(author)$
-  <h1>$author$</h1>
-  $endif$
 </head>
 <body>
   <header>
     <img src="img/profile.png" alt="My picture">
+    $if(author)$
+    <h1>$author$</h1>
+    $endif$
   </header>
   <main>
     $for(include-before)$
