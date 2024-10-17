@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <meta name="generator" content="pandoc" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+$if(date-meta)$
+  <meta name="date" content="$date-meta$">
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$">
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+$if(math)$
+$if(mathjax)$
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+$endif$
+  $math$
+$endif$
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.svg">
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+$if(subtitle)$
+<h1 class="subtitle">$subtitle$</h1>
+$endif$
+$for(author)$
+<h2 class="author">$author$</h2>
+$endfor$
+$if(date)$
+<h3 class="date">$date$</h3>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</div>
+$endif$
+$if(toc)$
+<div id="$idprefix$TOC">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</div>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>
