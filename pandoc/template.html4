@@ -41,6 +41,9 @@ $endif$
       $if(shortbio)$
       <h2>$shortbio$</h2>
       $endif$
+      $if(email)$
+      <p>✉️ $email$</p>
+      $endif$
     </aside>
   </header>
   <main>
