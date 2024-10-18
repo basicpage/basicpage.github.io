@@ -35,6 +35,8 @@ jobs:
             --output=website/index.html
             --template=pandoc/template.html4
             --css=style.css
+            --toc
+            --toc-depth=2
             --resource-path=.
             src/index.md
 
