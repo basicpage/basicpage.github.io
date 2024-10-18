@@ -1,6 +1,7 @@
 :root {
   --bg: #e3e7ed;
   --headerbg: #cef1f1;
+  --navbg: #bdf4f4;
 }
 
 /*** GENERAL ***/
@@ -56,6 +57,21 @@ header h2 {
 
 header p {
   margin: 0;
+}
+
+/*** NAV ***/
+
+nav {
+  max-width: 1200px;
+  width: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: var(--navbg);
 }
 
 /*** MAIN ***/

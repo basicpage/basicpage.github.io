@@ -48,12 +48,7 @@ $endif$
   </header>
   $if(toc)$
   <nav>
-    <div id="$idprefix$TOC">
-    $if(toc-title)$
-    <h2 id="$idprefix$toc-title">$toc-title$</h2>
-    $endif$
     $table-of-contents$
-    </div>
   </nav>
   $endif$
   <main>
