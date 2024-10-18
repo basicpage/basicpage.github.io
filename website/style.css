@@ -31,6 +31,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding-left: 20px;
+}
+
 /*** HEADER ***/
 
 header {
@@ -81,9 +85,11 @@ nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin: 0;
+  padding: 0;
+  gap: 15px;
 }
 
 nav ul li {
