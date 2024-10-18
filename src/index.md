@@ -17,15 +17,27 @@ I am a fake researcher and this is my personal page.
 
 ## Drafts
 
-None
+None ☠️
 
 ## Conference papers
 
-None
+### Towards automatic academic pages 2
+
+Templato, U. N. Owen, Wan Morotter
+
+*Journal of Awesomeness (JAW), 2024*
+
+<br>
+
+### Towards automatic academic pages
+
+Templato, U. N. Owen
+
+*Journal of Awesomeness (JAW), 2023*
 
 ## Journal papers
 
-None
+None ☠️
 
 # My PhD subject
 

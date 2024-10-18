@@ -123,6 +123,10 @@ main p {
   margin-bottom: 6px;
 }
 
-main h1, main h2, main h3, main h4, main h5, main h6 {
+main h1, main h2 {
   margin: 15px 0;
+}
+
+main h3, main h4, main h5, main h6 {
+  margin-bottom: 6px;
 }
