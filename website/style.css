@@ -1,7 +1,9 @@
 :root {
-  --bg: #e3e7ed;
+  --bg: #ddd;
   --headerbg: #cef1f1;
-  --navbg: #bdf4f4;
+  --navbg: #eafcfc;
+  --mainbg: #fcfcfc;
+  --navlink: rgb(121, 169, 220);
 }
 
 /*** GENERAL ***/
@@ -10,7 +12,7 @@
   box-sizing: border-box;
 }
 
-body, div, header, footer, main, h1, h2, h3, h4, h5, h6, img {
+body, div, header, footer, main, h1, h2, h3, h4, h5, h6, img, p {
   margin: 0;
   padding: 0;
 }
@@ -22,6 +24,11 @@ html {
 body {
   font-family: sans-serif;
   background: var(--bgcol);
+  min-height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*** HEADER ***/
@@ -65,13 +72,34 @@ nav {
   max-width: 1200px;
   width: auto;
   margin: auto;
+  padding: 15px;
+  background: var(--navbg);
+}
+
+nav ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding: 15px;
-  background: var(--navbg);
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  font-size: large;
+  color: var(--navlink);
+  border-bottom: 3px dotted var(--navlink);
+  padding-bottom: 0.2em;
+  margin: 0.3em;
+}
+
+nav ul li a:hover {
+  color: var(--navlink);
+  border-bottom: 3px solid var(--navlink);
 }
 
 /*** MAIN ***/
@@ -79,6 +107,15 @@ nav {
 main {
   width: auto;
   margin: auto;
-  margin-top: 20px;
   max-width: 1200px;
+  background: var(--mainbg);
+  padding: 15px;
+}
+
+main p {
+  margin-bottom: 6px;
+}
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin: 15px 0;
 }

@@ -5,6 +5,24 @@ shortbio: PhD student in 👽 science
 email: noreply@noemail.com
 ---
 
-# Super basic info
+I am a fake researcher and this is my personal page.
 
-TODO
+# Eductation
+
+- I was able to paint with my hands in kindergarten.
+- I went to high school where I studied stuff.
+- Master degree in hand painting.
+
+# Publications
+
+## Drafts
+
+None
+
+## Conference papers
+
+None
+
+## Journal papers
+
+None
