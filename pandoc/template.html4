@@ -19,6 +19,9 @@ $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
+$if(picture)$
+  <meta property="og:image" content="$picture$">
+$endif$
 $for(header-includes)$
   $header-includes$
 $endfor$
