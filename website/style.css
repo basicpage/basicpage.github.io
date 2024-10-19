@@ -23,13 +23,23 @@ html {
 }
 
 body {
-  font-family: sans-serif;
   background: var(--bg);
   min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 12pt;
+  line-height: 1.6;
+  padding: 2rem;
+  word-wrap: break-word;
 }
 
 a {
+  color: #3a6eb1;
   text-decoration: none;
+}
+
+a:active, a:hover {
+  color: #71acf8;
+  outline: 0;
 }
 
 ul {
@@ -39,7 +49,7 @@ ul {
 /*** HEADER ***/
 
 header {
-  max-width: 1200px;
+  max-width: 920px;
   width: auto;
   margin: auto;
   display: flex;
@@ -68,7 +78,7 @@ header p {
 /*** NAV ***/
 
 nav {
-  max-width: 1200px;
+  max-width: 920px;
   width: auto;
   margin: auto;
   padding: 15px;
@@ -110,7 +120,7 @@ nav ul li a:hover {
 main {
   width: auto;
   margin: auto;
-  max-width: 1200px;
+  max-width: 920px;
   background: var(--mainbg);
   padding: 15px;
   padding-top: 30px;
@@ -126,4 +136,99 @@ main h1, main h2 {
 
 main h3, main h4, main h5, main h6 {
   margin-bottom: 6px;
+}
+
+/* KBD */
+
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: #333;
+  display: inline-block;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+/* ALERTS */
+
+div.tip {
+  border-left: 4px solid rgb(48, 148, 48);
+  padding-left: 10px;
+}
+
+div.tip > div.title p {
+  color: rgb(48, 148, 48);
+  font-weight: bold;
+}
+
+div.tip > div.title p::before {
+  content: '💡';
+  margin-right: 4px;
+}
+
+div.important {
+  border-left: 4px solid rgb(115, 32, 136);
+  padding-left: 10px;
+}
+
+div.important > div.title p {
+  color: rgb(115, 32, 136);
+  font-weight: bold;
+}
+
+div.important > div.title p::before {
+  content: '❗';
+  margin-right: 4px;
+}
+
+div.warning {
+  border-left: 4px solid rgb(233, 170, 46);
+  padding-left: 10px;
+}
+
+div.warning > div.title p {
+  color: rgb(233, 170, 46);
+  font-weight: bold;
+}
+
+div.warning > div.title p::before {
+  content: '⚠️';
+  margin-right: 4px;
+}
+
+div.caution {
+  border-left: 4px solid rgb(233, 46, 83);
+  padding-left: 10px;
+}
+
+div.caution > div.title p {
+  color: rgb(233, 46, 83);
+  font-weight: bold;
+}
+
+div.caution > div.title p::before {
+  content: '🚩';
+  margin-right: 4px;
+}
+
+div.note {
+  border-left: 4px solid rgb(46, 93, 233);
+  padding-left: 10px;
+}
+
+div.note > div.title p {
+  color: rgb(46, 93, 233);
+  font-weight: bold;
+}
+
+div.note > div.title p::before {
+  content: 'ℹ️';
+  margin-right: 4px;
 }
