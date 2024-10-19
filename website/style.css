@@ -75,6 +75,18 @@ header p {
   margin: 0;
 }
 
+header div.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+}
+
+header div.icons a + a::before {
+  content: '•';
+}
+
 /*** NAV ***/
 
 nav {
