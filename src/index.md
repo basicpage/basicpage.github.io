@@ -4,6 +4,11 @@ author: Templato
 shortbio: PhD student in 👽 science
 email: noreply@noemail.com
 picture: img/profile.png
+github: basicpage
+orcid: 0000-0000-0000-0000
+dblp: https://dblp.org/
+scholar: https://scholar.google.com/
+hal: https://hal.science/
 ---
 
 I am a fake researcher and this is my personal page.
@@ -43,7 +48,11 @@ Templato, U. N. Owen
 
 ## Journal papers
 
-None ☠️
+### How to tame your wagon
+
+Templato
+
+*Journal of Automatic Rejection (JAR), 2022*
 
 # My PhD subject
 

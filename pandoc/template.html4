@@ -16,6 +16,8 @@ $if(description-meta)$
   <meta name="description" content="$description-meta$">
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+
+  <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
@@ -47,6 +49,30 @@ $endif$
     $endif$
     $if(email)$
     <p>✉️ <code>$email$</code></p>
+    $endif$
+    $if(orcid)$
+    <a href="https://orcid.org/$orcid$">
+      <i class="ai ai-orcid ai-fw icon-pad-right"></i>
+      $orcid$
+    </a>
+    $endif$
+    $if(dblp)$
+    <a href="$dblp$">
+      <i class="ai ai-dblp ai-fw icon-pad-right"></i>
+      DBLP
+    </a>
+    $endif$
+    $if(hal)$
+    <a href="$hal$">
+      <i class="ai ai-hal ai-fw icon-pad-right"></i>
+      HAL
+    </a>
+    $endif$
+    $if(scholar)$
+    <a href="$scholar$">
+      <i class="ai ai-google-scholar ai-fw icon-pad-right"></i>
+      Google Scholar
+    </a>
     $endif$
   </header>
   $if(toc)$
