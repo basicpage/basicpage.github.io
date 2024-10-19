@@ -33,18 +33,18 @@ $endif$
 </head>
 <body>
   <header>
-    <img src="img/profile.png" alt="My picture">
-    <aside>
-      $if(author)$
-      <h1>$author$</h1>
-      $endif$
-      $if(shortbio)$
-      <h2>$shortbio$</h2>
-      $endif$
-      $if(email)$
-      <p>✉️ <code>$email$</code></p>
-      $endif$
-    </aside>
+    $if(picture)$
+    <img src="$picture$" alt="My picture">
+    $endif$
+    $if(author)$
+    <h1>$author$</h1>
+    $endif$
+    $if(shortbio)$
+    <h2>$shortbio$</h2>
+    $endif$
+    $if(email)$
+    <p>✉️ <code>$email$</code></p>
+    $endif$
   </header>
   $if(toc)$
   <nav>

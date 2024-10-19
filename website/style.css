@@ -1,9 +1,10 @@
 :root {
-  --bg: #ddd;
-  --headerbg: #cef1f1;
-  --navbg: #eafcfc;
-  --mainbg: #fcfcfc;
-  --navlink: rgb(121, 169, 220);
+  --bg: #fbfdff;
+  --headerbg: transparent;
+  --navbg: transparent;
+  --mainbg: transparent;
+  --navlink: #56473d;
+  --navborder: #56473d;
 }
 
 /*** GENERAL ***/
@@ -23,7 +24,7 @@ html {
 
 body {
   font-family: sans-serif;
-  background: var(--bgcol);
+  background: var(--bg);
   min-height: 100%;
 }
 
@@ -42,25 +43,18 @@ header {
   width: auto;
   margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 15px;
   background: var(--headerbg);
-  gap: 15px;
+  gap: 5px;
 }
 
 header img {
   flex: 1;
   max-width: 200px;
-}
-
-header aside {
-  display: flex;
-  flex-direction: column;
-  flex: 3 300px;
-  margin-left: 30px;
 }
 
 header h2 {
@@ -79,6 +73,8 @@ nav {
   margin: auto;
   padding: 15px;
   background: var(--navbg);
+  border-bottom: 1px solid var(--navborder);
+  padding-bottom: 30px;
 }
 
 nav ul {
@@ -117,6 +113,7 @@ main {
   max-width: 1200px;
   background: var(--mainbg);
   padding: 15px;
+  padding-top: 30px;
 }
 
 main p {

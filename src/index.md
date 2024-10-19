@@ -3,6 +3,7 @@ title: Template homepage
 author: Templato
 shortbio: PhD student in 👽 science
 email: noreply@noemail.com
+picture: img/profile.png
 ---
 
 I am a fake researcher and this is my personal page.
