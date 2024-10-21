@@ -2,6 +2,7 @@
 title: Template homepage
 author: Templato
 shortbio: PhD student in 👽 science
+description-meta: PhD student in 👽 science
 email: noreply@noemail.com
 picture: img/profile.png
 github: basicpage
@@ -11,7 +12,7 @@ scholar: https://scholar.google.com/
 hal: https://hal.science/
 mastodon: lipn.info
 github: basicpage
-gitlab: gitlab.com
+gitlab: gitlab.comdescription-meta
 ---
 
 I am a (fake) PhD student, working on 👽 science on all kinds of related topics.

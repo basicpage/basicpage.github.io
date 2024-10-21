@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: https://ogp.me/ns#">
 <head>
   <meta name="viewport" content="width=device-width">
-  <meta name="generator" content="pandoc" />
+  <meta name="generator" content="pandoc">
+  <meta property=”og:type” content=”siteweb”>
 $for(author-meta)$
   <meta name="author" content="$author-meta$">
 $endfor$
@@ -14,8 +15,11 @@ $if(keywords)$
 $endif$
 $if(description-meta)$
   <meta name="description" content="$description-meta$">
+  <meta property="og:description" content="$description-meta$">
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  $if(title-prefix)$<meta property="og:site_name" content="$title-prefix$">$endif$
+  <meta property="og:title" content="$pagetitle$">
 
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="academicons/css/academicons.min.css">
