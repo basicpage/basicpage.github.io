@@ -9,6 +9,9 @@ orcid: 0000-0000-0000-0000
 dblp: https://dblp.org/
 scholar: https://scholar.google.com/
 hal: https://hal.science/
+mastodon: lipn.info
+github: basicpage
+gitlab: gitlab.com
 ---
 
 I am a (fake) PhD student, working on 👽 science on all kinds of related topics.

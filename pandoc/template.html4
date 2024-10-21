@@ -17,7 +17,8 @@ $if(description-meta)$
 $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
 
-  <link rel="stylesheet" href="academicons/css/academicons.min.css"/>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="academicons/css/academicons.min.css">
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
@@ -48,7 +49,7 @@ $endif$
     <h2>$shortbio$</h2>
     $endif$
     $if(email)$
-    <p>✉️ <code>$email$</code></p>
+    <p><i class='bx bx-envelope'></i> <code>$email$</code></p>
     $endif$
     <div class="icons">
       $if(orcid)$
@@ -73,6 +74,24 @@ $endif$
       <a href="$scholar$">
         <i class="ai ai-google-scholar ai-fw icon-pad-right"></i>
         Google Scholar
+      </a>
+      $endif$
+      $if(mastodon)$
+      <a href="$mastodon$">
+        <i class='bx bxl-mastodon'></i>
+        Mastodon
+      </a>
+      $endif$
+      $if(github)$
+      <a href="github.com/$github$">
+        <i class='bx bxl-github'></i>
+        $github$
+      </a>
+      $endif$
+      $if(gitlab)$
+      <a href="github.com/$gitlab$">
+        <i class='bx bxl-gitlab'></i>
+        Gitlab
       </a>
       $endif$
     </div>
