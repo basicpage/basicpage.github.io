@@ -22,6 +22,18 @@ but producing something much simpler.
 
 - Fill the contents of `index.md` to your liking and it should just work.
 
+## Options
+
+The `index.md` file starts with a header. All the items in it are optional.
+For instance, if you remove the line
+```yaml
+picture: img/profile.png
+```
+then the website will no longer contain a picture.
+We think it's better to have a picture, but it's your choice.
+
+The same goes for email and so on.
+
 ## Authors
 
 - Yannick Forster
