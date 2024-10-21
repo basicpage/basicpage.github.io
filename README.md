@@ -34,6 +34,12 @@ We think it's better to have a picture, but it's your choice.
 
 The same goes for email and so on.
 
+## Sharing files
+
+Anything you put in the `website` directory will be available online too.
+For instance, you can add PDF of your papers and so on and then link them
+(or not) from `index.md`.
+
 ## Authors
 
 - Yannick Forster
