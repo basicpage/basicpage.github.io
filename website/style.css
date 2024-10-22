@@ -202,7 +202,8 @@ div.tip > div.title p {
 }
 
 div.tip > div.title p::before {
-  content: '💡';
+  font-family: "Font Awesome 6 Free";
+  content: '\f0eb';
   margin-right: 4px;
 }
 
@@ -217,7 +218,8 @@ div.important > div.title p {
 }
 
 div.important > div.title p::before {
-  content: '❗';
+  font-family: "Font Awesome 6 Free";
+  content: '\f27a';
   margin-right: 4px;
 }
 
@@ -232,7 +234,8 @@ div.warning > div.title p {
 }
 
 div.warning > div.title p::before {
-  content: '⚠️';
+  font-family: "Font Awesome 6 Free";
+  content: '\f071';
   margin-right: 4px;
 }
 
@@ -247,7 +250,8 @@ div.caution > div.title p {
 }
 
 div.caution > div.title p::before {
-  content: '🚩';
+  font-family: "Font Awesome 6 Free";
+  content: '\f06a';
   margin-right: 4px;
 }
 
@@ -262,6 +266,7 @@ div.note > div.title p {
 }
 
 div.note > div.title p::before {
-  content: 'ℹ️';
+  font-family: "Font Awesome 6 Free";
+  content: '\f05a';
   margin-right: 4px;
 }
