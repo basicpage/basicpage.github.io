@@ -80,11 +80,32 @@ header div.icons {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 5px;
+  gap: 7px;
 }
 
-header div.icons a + a::before {
-  content: '•';
+header div.icons a {
+  font-size: x-large;
+}
+
+header div.icons a[title] {
+  position: relative;
+}
+
+header div.icons a:hover[title]::after {
+  content: attr(title);
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  white-space: nowrap;
+  background-color: #555;
+  color: #fff;
+  font-style: normal;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%, -1em);
+  z-index: 1;
 }
 
 /*** NAV ***/

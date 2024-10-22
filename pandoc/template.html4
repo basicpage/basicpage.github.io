@@ -66,45 +66,38 @@ $endif$
     $endif$
     <div class="icons">
       $if(orcid)$
-      <a href="https://orcid.org/$orcid$">
+      <a href="https://orcid.org/$orcid$" title="ORCID: $orcid$">
         <i class="ai ai-orcid ai-fw icon-pad-right"></i>
-        $orcid$
       </a>
       $endif$
       $if(dblp)$
-      <a href="$dblp$">
+      <a href="$dblp$" title="DBLP">
         <i class="ai ai-dblp ai-fw icon-pad-right"></i>
-        DBLP
       </a>
       $endif$
       $if(hal)$
-      <a href="$hal$">
+      <a href="$hal$" title="HAL">
         <i class="ai ai-hal ai-fw icon-pad-right"></i>
-        HAL
       </a>
       $endif$
       $if(scholar)$
-      <a href="$scholar$">
+      <a href="$scholar$" title="Google Scholar">
         <i class="ai ai-google-scholar ai-fw icon-pad-right"></i>
-        Google Scholar
       </a>
       $endif$
       $if(mastodon)$
-      <a href="$mastodon$">
+      <a href="$mastodon$" title="Mastodon">
         <i class='bx bxl-mastodon'></i>
-        Mastodon
       </a>
       $endif$
       $if(github)$
-      <a href="github.com/$github$">
+      <a href="github.com/$github$" title="Github: $github$">
         <i class='bx bxl-github'></i>
-        $github$
       </a>
       $endif$
       $if(gitlab)$
-      <a href="github.com/$gitlab$">
+      <a href="github.com/$gitlab$" title="Gitlab">
         <i class='bx bxl-gitlab'></i>
-        Gitlab
       </a>
       $endif$
     </div>
