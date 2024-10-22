@@ -30,7 +30,7 @@ $endif$
   $if(title-prefix)$<meta property="og:site_name" content="$title-prefix$">$endif$
   <meta property="og:title" content="$pagetitle$">
 
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="academicons/css/academicons.min.css">
 $for(css)$
   <link rel="stylesheet" href="$css$">
@@ -62,7 +62,7 @@ $endif$
     <h2>$shortbio$</h2>
     $endif$
     $if(email)$
-    <p><i class='bx bx-envelope'></i> <code>$email$</code></p>
+    <p><i class="fa-regular fa-envelope"></i> <code>$email$</code></p>
     $endif$
     <div class="icons">
       $if(orcid)$
@@ -87,17 +87,22 @@ $endif$
       $endif$
       $if(mastodon)$
       <a href="$mastodon$" title="Mastodon">
-        <i class='bx bxl-mastodon'></i>
+        <i class="fa-brands fa-mastodon fa-sm"></i>
       </a>
       $endif$
       $if(github)$
       <a href="github.com/$github$" title="Github: $github$">
-        <i class='bx bxl-github'></i>
+        <i class="fa-brands fa-github fa-sm"></i>
       </a>
       $endif$
       $if(gitlab)$
       <a href="github.com/$gitlab$" title="Gitlab">
-        <i class='bx bxl-gitlab'></i>
+        <i class="fa-brands fa-gitlab fa-sm"></i>
+      </a>
+      $endif$
+      $if(bluesky)$
+      <a href="$bluesky$" title="BlueSky">
+        <i class="fa-brands fa-bluesky fa-sm"></i>
       </a>
       $endif$
     </div>

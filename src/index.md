@@ -12,7 +12,8 @@ scholar: https://scholar.google.com/
 hal: https://hal.science/
 mastodon: lipn.info
 github: basicpage
-gitlab: gitlab.comdescription-meta
+gitlab: gitlab.com
+bluesky: https://bsky.app/
 ---
 
 I am a (fake) PhD student, working on 👽 science on all kinds of related topics.

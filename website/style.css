@@ -80,7 +80,7 @@ header div.icons {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7px;
+  gap: 8px;
 }
 
 header div.icons a {
