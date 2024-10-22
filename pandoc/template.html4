@@ -69,7 +69,7 @@ $endif$
     $endif$
     <div class="icons">
       $if(orcid)$
-      <a href="https://orcid.org/$orcid$" title="ORCID: $orcid$">
+      <a href="https://orcid.org/$orcid$" title="ORCID">
         <i class="ai ai-orcid ai-fw icon-pad-right"></i>
       </a>
       $endif$
