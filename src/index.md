@@ -1,8 +1,9 @@
 ---
 title: Template homepage
-author: Templato
+author: Templato Urnehm
 shortbio: PhD student in 👽 science
 description-meta: PhD student in 👽 science
+location: Some lab, office 777
 email: noreply@noemail.com
 picture: img/profile.png
 github: basicpage

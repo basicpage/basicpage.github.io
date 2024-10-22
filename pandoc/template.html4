@@ -61,6 +61,9 @@ $endif$
     $if(shortbio)$
     <h2>$shortbio$</h2>
     $endif$
+    $if(location)$
+    <p><i class="fa-solid fa-location-dot"></i> $location$</p>
+    $endif$
     $if(email)$
     <p><i class="fa-regular fa-envelope"></i> <code>$email$</code></p>
     $endif$
