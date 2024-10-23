@@ -38,6 +38,9 @@ $endfor$
 $if(picture)$
   <meta property="og:image" content="$picture$">
 $endif$
+$if(og-url)$
+  <meta property="og:url" content="$og-url$">
+$endif$
 $for(header-includes)$
   $header-includes$
 $endfor$

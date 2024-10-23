@@ -3,6 +3,7 @@ title: Template homepage
 author: Templato Urnehm
 shortbio: PhD student in 👽 science
 description-meta: PhD student in 👽 science
+og-url: https://basicpage.github.io
 location: Some lab, office 777
 email: noreply@noemail.com
 picture: img/profile.png
