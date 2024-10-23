@@ -35,8 +35,8 @@ $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
-$if(picture)$
-  <meta property="og:image" content="$picture$">
+$if(og-picture)$
+  <meta property="og:image" content="$og-picture$">
 $endif$
 $if(og-url)$
   <meta property="og:url" content="$og-url$">
