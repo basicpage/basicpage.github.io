@@ -104,12 +104,12 @@ $endif$
       </a>
       $endif$
       $if(github)$
-      <a href="github.com/$github$" title="Github: $github$">
+      <a href="https://github.com/$github$" title="Github: $github$">
         <i class="fa-brands fa-github fa-fw"></i>
       </a>
       $endif$
       $if(gitlab)$
-      <a href="github.com/$gitlab$" title="Gitlab">
+      <a href="https://gitlab.com/$gitlab$" title="Gitlab">
         <i class="fa-brands fa-gitlab fa-fw"></i>
       </a>
       $endif$
