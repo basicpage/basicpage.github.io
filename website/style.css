@@ -270,3 +270,8 @@ div.note > div.title p::before {
   content: '\f05a';
   margin-right: 4px;
 }
+
+.round-image {
+    border-radius: 50%; 
+    object-fit: cover;
+}
