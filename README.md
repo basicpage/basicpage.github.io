@@ -75,7 +75,7 @@ description.
 
 ### Social and academic accounts
 
-- `github`: Username to your github account.
+- `github`: Username to your Github account.
 
 - `orcid`: Your ORCID number (in the shape `0000-0000-0000-0000`).
 
@@ -87,7 +87,7 @@ description.
 
 - `mastodon`: *URL* to your Mastodon account.
 
-- `gitlab`: *URL* to your Gitlab account.
+- `gitlab`: username to your Gitlab account.
 
 - `bluesky`: *URL* to your BlueSky account.
 
