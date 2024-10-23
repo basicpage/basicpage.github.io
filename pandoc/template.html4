@@ -56,7 +56,11 @@ $endif$
 <body>
   <header>
     $if(picture)$
-    <img src="$picture$" alt="My picture">
+      $if(picture-round)$
+      <img class="round-image" src="$picture$" alt="My picture">
+      $else$
+      <img src="$picture$" alt="My picture">
+      $endif$
     $endif$
     $if(author)$
     <h1>$author$</h1>
