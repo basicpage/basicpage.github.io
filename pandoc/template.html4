@@ -8,7 +8,7 @@
   - Théo Winterhalter
 -->
 <!DOCTYPE html>
-<html prefix="og: https://ogp.me/ns#">
+<html prefix="og: https://ogp.me/ns#" lang="en">
 <head>
   <meta name="viewport" content="width=device-width">
   <meta name="generator" content="pandoc">
