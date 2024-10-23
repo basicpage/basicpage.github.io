@@ -87,7 +87,7 @@ description.
 
 - `mastodon`: *URL* to your Mastodon account.
 
-- `gitlab`: username to your Gitlab account.
+- `gitlab`: Username to your Gitlab account.
 
 - `bluesky`: *URL* to your BlueSky account.
 
