@@ -6,7 +6,7 @@ description-meta: PhD student in 👽 science
 og-url: https://basicpage.github.io
 location: Some lab, office 777
 email: noreply@noemail.com
-picture: img/profile.png
+picture: /img/profile.png
 github: basicpage
 orcid: 0000-0000-0000-0000
 dblp: https://dblp.org/
