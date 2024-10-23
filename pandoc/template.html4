@@ -68,6 +68,9 @@ $endif$
     $if(shortbio)$
     <h2>$shortbio$</h2>
     $endif$
+    $if(pronouns)$
+    <p>$pronouns$</p>
+    $endif$
     $if(location)$
     <p><i class="fa-solid fa-location-dot fa-fw"></i> $location$</p>
     $endif$

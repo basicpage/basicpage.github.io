@@ -56,6 +56,8 @@ We give the semantics of the various fields (all of whom are optional).
   picture is rounded or left as a square.
   By default, it is square.
 
+- `pronouns`: A string to show your pronouns.
+
 ### OpenGraph
 
 OpenGraph carries information that used by social media and messaging app to
