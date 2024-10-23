@@ -9,7 +9,6 @@ email: noreply@noemail.com
 picture: img/profile.png
 picture-round: false
 og-picture: https://basicpage.github.io/img/profile.png
-github: basicpage
 orcid: 0000-0000-0000-0000
 dblp: https://dblp.org/
 scholar: https://scholar.google.com/
