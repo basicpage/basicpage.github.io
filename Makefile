@@ -9,4 +9,5 @@ website:
          --toc \
          --toc-depth=1 \
          --resource-path=. \
+         --lua-filter=pandoc/paper.lua \
          src/index.md

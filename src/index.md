@@ -34,13 +34,15 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 
 ## Conference papers
 
-### Towards automatic academic pages 2
-
-Templato, U. N. Owen, Wan Morotter
-
-*Journal of Awesomeness (JAW), 2024*
-
-<br>
+``` paper
+{
+  "title": "Towards automatic academic pages 2",
+  "authors": "Templato, U. N. Owen, Wan Morotter",
+  "venue": "Journal of Awesomeness (JAW),",
+  "year": "2024",
+  "url": "https://basicpage.github.io"
+}
+```
 
 ### Towards automatic academic pages
 

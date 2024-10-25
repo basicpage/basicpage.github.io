@@ -271,7 +271,24 @@ div.note > div.title p::before {
   margin-right: 4px;
 }
 
+/* CLASSES */
+
 .round-image {
-    border-radius: 50%; 
+    border-radius: 50%;
     object-fit: cover;
+}
+
+section.paper {
+  border-left: 4px solid rgb(102, 102, 110);
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+section.paper h3 {
+  margin: 0;
+}
+
+section.paper p {
+  color: rgb(136, 136, 136);
+  margin: 0;
 }
