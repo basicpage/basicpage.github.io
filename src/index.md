@@ -47,7 +47,12 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 "authors": "Templato Urnehm, U. N. Owen",
 "venue": "Principles of Awesomeness (PAW)",
 "year": "2023",
-"url": "https://basicpage.github.io"
+"url": "https://basicpage.github.io",
+"files": [
+  { "text": "Paper", "type": "pdf", "src": "foo.pdf" },
+  { "text": "Bibtex", "type": "bib", "src": "foo.bib" },
+  { "text": "Formalisation", "type": "code", "src": "foo.v" }
+]
 ```
 
 ## Journal papers
@@ -56,13 +61,22 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 "title": "How to tame your wagon",
 "authors": "Templato Urnehm",
 "venue": "Journal of Automatic Rejection (JAR)",
-"year": "2022",
-"url": "https://basicpage.github.io"
+"year": "2022"
 ```
 
 ## Drafts
 
-None ☠️
+```paper
+"title": "TBD",
+"authors": "TBD",
+"files": [
+  { "text": "🐱 video", "type": "video", "src": "foo.mov" },
+  { "text": "Poem", "type": "txt", "src": "foo.txt" },
+  { "text": "My picture", "type": "img", "src": "img/profile.png" },
+  { "text": "💣", "type": "zip", "src": "foo.zip" },
+  { "text": "Slides", "type": "slides", "src": "foo.key" }
+]
+```
 
 # Education
 

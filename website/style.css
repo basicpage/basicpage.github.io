@@ -292,3 +292,26 @@ section.paper p {
   color: rgb(136, 136, 136);
   margin: 0;
 }
+
+div.files {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 0;
+}
+
+div.files a {
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  background: #e5e7e8;
+  color: #343d44;
+  font-size: small;
+}
+
+div.files a:hover {
+  background: #91c3ea;
+  text-decoration: none;
+}
