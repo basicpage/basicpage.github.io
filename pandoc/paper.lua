@@ -1,10 +1,4 @@
-function paper(content)
-
-  local data = pandoc.json.decode(content, false)
-
-  if not data then
-    error("Failed to decode JSON:\n" .. content)
-  end
+function paper(data)
 
   local title = data.title or ""
   local url = data.url
@@ -83,7 +77,30 @@ function CodeBlock(el)
 
   if el.classes[1] == "paper" then
     local content = string.format("{ %s }", el.text)
-    return paper(content)
+
+    local data = pandoc.json.decode(content, false)
+
+    if not data then
+      error("Failed to decode JSON:\n" .. content)
+    end
+
+    return paper(data)
+  end
+
+  if el.classes[1] == "papers" then
+    local content = string.format("[ %s ]", el.text)
+
+    local data = pandoc.json.decode(content, false)
+
+    if not data then
+      error("Failed to decode JSON:\n" .. content)
+    end
+
+    local content = data:map(function(d)
+      return paper(d)
+    end)
+
+    return pandoc.Blocks(content)
   end
 
   return el

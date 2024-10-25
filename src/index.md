@@ -81,7 +81,24 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 
 ## Talks
 
-None yet.
+``` papers
+{
+  "title": "Talk 1",
+  "authors": "Templato Urnehm",
+  "venue": "My room"
+},
+{
+  "title": "Secret talk",
+  "authors": "Templato Urnehm",
+  "year": "1990"
+},
+{
+  "title": "Talk 3",
+  "authors": "Templato Urnehm",
+  "venue": "Don't remember…",
+  "year": "???"
+}
+```
 
 # Education
 

@@ -114,6 +114,11 @@ For instance:
 > Make sure to respect JSON syntax, in particular place commas where they are
 > needed, and only there. Test locally before you push.
 
+> [!TIP]
+> You can input multiple files at once by using `papers` (with an `s`) instead
+> of `paper`. In that case, papers must be bracketed properly.
+> Have a look at `index.md` to see how it's done.
+
 The file that handles papers is `pandoc/paper.lua` and you may modify it to suit
 your needs. Currently, it expects the fields `title` and `authors` (it will
 assume them to be empty otherwise), while the other fields (`venue`, `year`,
