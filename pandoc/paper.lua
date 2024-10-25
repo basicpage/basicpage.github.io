@@ -3,7 +3,7 @@ function paper(content)
   local data = pandoc.json.decode(content, false)
 
   if not data then
-    error("Failed to decode JSON:\n" .. el.text)
+    error("Failed to decode JSON:\n" .. content)
   end
 
   local title = data.title or ""
