@@ -67,12 +67,18 @@ header img {
   max-width: 200px;
 }
 
+header h1 {
+  text-align: center;
+}
+
 header h2 {
   font-size: medium;
+  text-align: center;
 }
 
 header p {
   margin: 0;
+  text-align: center;
 }
 
 header div.icons {
@@ -314,4 +320,15 @@ div.files a {
 div.files a:hover {
   background: #91c3ea;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+  header.split {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  header.split h1, header.split h2, header.split p {
+    text-align: left;
+  }
 }

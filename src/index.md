@@ -8,6 +8,7 @@ location: Some lab, office 777
 email: noreply@noemail.com
 picture: img/profile.png
 picture-round: false
+side-by-side: false
 pronouns: They/Them
 og-picture: https://basicpage.github.io/img/profile.png
 orcid: 0000-0000-0000-0000

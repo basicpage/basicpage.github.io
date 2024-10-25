@@ -13,48 +13,52 @@
   <meta name="viewport" content="width=device-width">
   <meta name="generator" content="pandoc">
   <meta property="og:type" content="website">
-$for(author-meta)$
+  $for(author-meta)$
   <meta name="author" content="$author-meta$">
-$endfor$
-$if(date-meta)$
+  $endfor$
+  $if(date-meta)$
   <meta name="date" content="$date-meta$">
-$endif$
-$if(keywords)$
+  $endif$
+  $if(keywords)$
   <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
-$endif$
-$if(description-meta)$
+  $endif$
+  $if(description-meta)$
   <meta name="description" content="$description-meta$">
   <meta property="og:description" content="$description-meta$">
-$endif$
+  $endif$
   <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
   $if(title-prefix)$<meta property="og:site_name" content="$title-prefix$">$endif$
   <meta property="og:title" content="$pagetitle$">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="academicons/css/academicons.min.css">
-$for(css)$
+  $for(css)$
   <link rel="stylesheet" href="$css$">
-$endfor$
-$if(og-picture)$
+  $endfor$
+  $if(og-picture)$
   <meta property="og:image" content="$og-picture$">
-$endif$
-$if(og-url)$
+  $endif$
+  $if(og-url)$
   <meta property="og:url" content="$og-url$">
-$endif$
-$for(header-includes)$
-  $header-includes$
-$endfor$
-$if(math)$
-$if(mathjax)$
+  $endif$
+  $for(header-includes)$
+    $header-includes$
+  $endfor$
+  $if(math)$
+  $if(mathjax)$
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-$endif$
-  $math$
-$endif$
+  $endif$
+    $math$
+  $endif$
   <!-- Favicon -->
   <link rel="icon" href="img/favicon.svg">
 </head>
 <body>
+  $if(side-by-side)$
+  <header class="split">
+  $else$
   <header>
+  $endif$
     $if(picture)$
       $if(picture-round)$
       <img class="round-image" src="$picture$" alt="My picture">
@@ -62,63 +66,65 @@ $endif$
       <img src="$picture$" alt="My picture">
       $endif$
     $endif$
-    $if(author)$
-    <h1>$author$</h1>
-    $endif$
-    $if(shortbio)$
-    <h2>$shortbio$</h2>
-    $endif$
-    $if(pronouns)$
-    <p>$pronouns$</p>
-    $endif$
-    $if(location)$
-    <p><i class="fa-solid fa-location-dot fa-fw"></i> $location$</p>
-    $endif$
-    $if(email)$
-    <p><i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code></p>
-    $endif$
-    <div class="icons">
-      $if(orcid)$
-      <a href="https://orcid.org/$orcid$" title="ORCID">
-        <i class="ai ai-orcid ai-fw icon-pad-right"></i>
-      </a>
+    <aside>
+      $if(author)$
+      <h1>$author$</h1>
       $endif$
-      $if(dblp)$
-      <a href="$dblp$" title="DBLP">
-        <i class="ai ai-dblp ai-fw icon-pad-right"></i>
-      </a>
+      $if(shortbio)$
+      <h2>$shortbio$</h2>
       $endif$
-      $if(hal)$
-      <a href="$hal$" title="HAL">
-        <i class="ai ai-hal ai-fw icon-pad-right"></i>
-      </a>
+      $if(pronouns)$
+      <p>$pronouns$</p>
       $endif$
-      $if(scholar)$
-      <a href="$scholar$" title="Google Scholar">
-        <i class="ai ai-google-scholar ai-fw icon-pad-right"></i>
-      </a>
+      $if(location)$
+      <p><i class="fa-solid fa-location-dot fa-fw"></i> $location$</p>
       $endif$
-      $if(mastodon)$
-      <a href="$mastodon$" title="Mastodon">
-        <i class="fa-brands fa-mastodon fa-fw"></i>
-      </a>
+      $if(email)$
+      <p><i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code></p>
       $endif$
-      $if(github)$
-      <a href="https://github.com/$github$" title="Github: $github$">
-        <i class="fa-brands fa-github fa-fw"></i>
-      </a>
-      $endif$
-      $if(gitlab)$
-      <a href="https://gitlab.com/$gitlab$" title="Gitlab">
-        <i class="fa-brands fa-gitlab fa-fw"></i>
-      </a>
-      $endif$
-      $if(bluesky)$
-      <a href="$bluesky$" title="BlueSky">
-        <i class="fa-brands fa-bluesky fa-fw"></i>
-      </a>
-      $endif$
-    </div>
+      <div class="icons">
+        $if(orcid)$
+        <a href="https://orcid.org/$orcid$" title="ORCID">
+          <i class="ai ai-orcid ai-fw icon-pad-right"></i>
+        </a>
+        $endif$
+        $if(dblp)$
+        <a href="$dblp$" title="DBLP">
+          <i class="ai ai-dblp ai-fw icon-pad-right"></i>
+        </a>
+        $endif$
+        $if(hal)$
+        <a href="$hal$" title="HAL">
+          <i class="ai ai-hal ai-fw icon-pad-right"></i>
+        </a>
+        $endif$
+        $if(scholar)$
+        <a href="$scholar$" title="Google Scholar">
+          <i class="ai ai-google-scholar ai-fw icon-pad-right"></i>
+        </a>
+        $endif$
+        $if(mastodon)$
+        <a href="$mastodon$" title="Mastodon">
+          <i class="fa-brands fa-mastodon fa-fw"></i>
+        </a>
+        $endif$
+        $if(github)$
+        <a href="https://github.com/$github$" title="Github: $github$">
+          <i class="fa-brands fa-github fa-fw"></i>
+        </a>
+        $endif$
+        $if(gitlab)$
+        <a href="https://gitlab.com/$gitlab$" title="Gitlab">
+          <i class="fa-brands fa-gitlab fa-fw"></i>
+        </a>
+        $endif$
+        $if(bluesky)$
+        <a href="$bluesky$" title="BlueSky">
+          <i class="fa-brands fa-bluesky fa-fw"></i>
+        </a>
+        $endif$
+      </div>
+    </aside>
   </header>
   $if(toc)$
   <nav>

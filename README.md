@@ -52,9 +52,13 @@ We give the semantics of the various fields (all of whom are optional).
 
 - `picture`: A path (relative or absolute) to the profile picture.
 
-- `picture-round`: A boolean (`true` or `false`) deciding whether your profile
+- `picture-round`: A Boolean (`true` or `false`) deciding whether your profile
   picture is rounded or left as a square.
   By default, it is square.
+
+- `side-by-side`: A Boolean deciding whether the picture and the rest of the
+  header are side by side on larger screens.
+  By default, it's all on top of each other, like on smaller screens.
 
 - `pronouns`: A string to show your pronouns.
 
