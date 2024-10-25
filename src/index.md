@@ -36,25 +36,29 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 
 ``` paper
 "title": "Towards automatic academic pages 2",
-"authors": "Templato, U. N. Owen, Wan Morotter",
-"venue": "Journal of Awesomeness (JAW),",
+"authors": "Templato Urnehm, U. N. Owen, Wan Morotter",
+"venue": "Principles of Awesomeness (PAW)",
 "year": "2024",
 "url": "https://basicpage.github.io"
 ```
 
-### Towards automatic academic pages
-
-Templato, U. N. Owen
-
-*Journal of Awesomeness (JAW), 2023*
+``` paper
+"title": "Towards automatic academic pages",
+"authors": "Templato Urnehm, U. N. Owen",
+"venue": "Principles of Awesomeness (PAW)",
+"year": "2023",
+"url": "https://basicpage.github.io"
+```
 
 ## Journal papers
 
-### How to tame your wagon
-
-Templato
-
-*Journal of Automatic Rejection (JAR), 2022*
+``` paper
+"title": "How to tame your wagon",
+"authors": "Templato Urnehm",
+"venue": "Journal of Automatic Rejection (JAR)",
+"year": "2022",
+"url": "https://basicpage.github.io"
+```
 
 ## Drafts
 

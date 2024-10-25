@@ -11,7 +11,7 @@ function CodeBlock(el)
     local div_content = {
       pandoc.Header(3, {pandoc.Link(data.title, data.url)}),
       pandoc.Para({pandoc.Str(data.authors)}, {class = "authors"}),
-      pandoc.Para({pandoc.Str(data.venue .. "(" .. data.year .. ")")}, {class = "venue"}) -- It seems the class cannot be set
+      pandoc.Para({pandoc.Str(data.venue .. " (" .. data.year .. ")")}, {class = "venue"}) -- It seems the class cannot be set
     }
 
     local div = pandoc.Div(div_content, {class = "paper"})
