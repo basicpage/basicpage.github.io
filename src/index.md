@@ -74,9 +74,14 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
   { "text": "Poem", "type": "txt", "src": "foo.txt" },
   { "text": "My picture", "type": "img", "src": "img/profile.png" },
   { "text": "💣", "type": "zip", "src": "foo.zip" },
-  { "text": "Slides", "type": "slides", "src": "foo.key" }
+  { "text": "Slides", "type": "slides", "src": "foo.key" },
+  { "text": "Some random file", "src": "foo.rand" }
 ]
 ```
+
+## Talks
+
+None yet.
 
 # Education
 

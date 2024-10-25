@@ -91,6 +91,60 @@ description.
 
 - `bluesky`: *URL* to your BlueSky account.
 
+## Papers
+
+We provide some tools to input your publications and drafts in JSON format.
+For instance:
+````json
+``` paper
+"title": "Towards automatic academic pages",
+"authors": "Templato Urnehm, U. N. Owen",
+"venue": "Principles of Awesomeness (PAW)",
+"year": "2023",
+"url": "https://basicpage.github.io",
+"files": [
+  { "text": "Paper", "type": "pdf", "src": "foo.pdf" },
+  { "text": "Bibtex", "type": "bib", "src": "foo.bib" },
+  { "text": "Formalisation", "type": "code", "src": "foo.v" }
+]
+```
+````
+
+> [!WARNING]
+> Make sure to respect JSON syntax, in particular place commas where they are
+> needed, and only there. Test locally before you push.
+
+The file that handles papers is `pandoc/paper.lua` and you may modify it to suit
+your needs. Currently, it expects the fields `title` and `authors` (it will
+assume them to be empty otherwise), while the other fields (`venue`, `year`,
+`url` and `files`) are optional.
+
+- `title`: Title of your paper. Will be used as header of the block.
+- `authors`: List of authors.
+- `venue` (optional): Journal or conference.
+- `year` (optional): Date of the conference, if present it is going to be in
+  parentheses after the venue (unless the venue is absent in which case it
+  will be alone on its line without parentheses). A more precise date is
+  possible, in the end this is just treated as a string.
+- `url` (optional): If present, the header will also be a link pointing to the
+  provided URL.
+- `files` (optional): A list of files that will be presented as links on one
+  line with an icon depending on the file type.
+  Each item must contain the following fields that will be assumed empty if
+  absent:
+  + `text`: Text that will appear.
+  + `src`: URL to the file, it can be local.
+  + `type`: Type of file. If no value is present, then the icon will be that of
+    an undifferentiated file.
+    The possible values are:
+    * `pdf`
+    * `bib`
+    * `code`
+    * `video`
+    * `txt`
+    * `img`
+    * `zip`
+    * `slides`
 
 ## Sharing files
 
