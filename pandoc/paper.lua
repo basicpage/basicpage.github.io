@@ -63,8 +63,8 @@ function paper(data)
   local div_content = {
     pandoc.Header(3, header),
     pandoc.Para({pandoc.Str(authors)}, {class = "authors"}),
-    pandoc.Para(sub, {class = "venue"}), -- It seems the class cannot be set
-    pandoc.Div(file_info, { class = "files" })
+    pandoc.Para(sub),
+    pandoc.Div(file_info)
   }
 
   local div = pandoc.Div(div_content, {class = "paper"})
@@ -102,7 +102,5 @@ function CodeBlock(el)
 
     return pandoc.Blocks(content)
   end
-
-  return el
 
 end
