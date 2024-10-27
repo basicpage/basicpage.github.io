@@ -64,7 +64,7 @@ function paper(data)
     pandoc.Header(3, header),
     pandoc.Para({pandoc.Str(authors)}, {class = "authors"}),
     pandoc.Para(sub),
-    pandoc.Div(file_info)
+    pandoc.Div(file_info, {class = "files"})
   }
 
   local div = pandoc.Div(div_content, {class = "paper"})
