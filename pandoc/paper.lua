@@ -128,7 +128,7 @@ function CodeBlock(el)
     return paper(yamldata(doc.meta))
   end
 
-  if el.classes[1] == "paper" then
+  if el.classes[1] == "paper" and el.classes[2] == "json" then
     local content = string.format("{ %s }", el.text)
 
     local data = pandoc.json.decode(content, false)
@@ -140,7 +140,23 @@ function CodeBlock(el)
     return paper(jsondata(data))
   end
 
-  if el.classes[1] == "papers" then
+  if el.classes[1] == "papers" and el.classes[2] == "yaml" then
+    local content = string.format("---\n%s\n---", el.text)
+
+    local doc = pandoc.read(content)
+
+    if not doc then
+      error("Failed to decode yaml:\n" .. content)
+    end
+
+    local content = doc.meta.papers:map(function(d)
+      return paper(yamldata(d))
+    end)
+
+    return pandoc.Blocks(content)
+  end
+
+  if el.classes[1] == "papers" and el.classes[2] == "json" then
     local content = string.format("[ %s ]", el.text)
 
     local data = pandoc.json.decode(content, false)

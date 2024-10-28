@@ -35,7 +35,7 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 
 ## Conference papers
 
-``` paper
+``` json {.paper}
 "title": "Towards automatic academic pages 2",
 "authors": "Templato Urnehm, U. N. Owen, Wan Morotter",
 "venue": "Principles of Awesomeness (PAW)",
@@ -43,7 +43,7 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 "url": "https://basicpage.github.io"
 ```
 
-``` paper
+``` json {.paper}
 "title": "Towards automatic academic pages",
 "authors": "Templato Urnehm, U. N. Owen",
 "venue": "Principles of Awesomeness (PAW)",
@@ -59,10 +59,10 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 ## Journal papers
 
 ``` yaml {.paper}
-title: Yet another yaml parser
+title: Yet another yaml parser 3
 authors: Templato Urnehm
 venue: Proceedings of Nihilism
-year: 2025
+year: 2029
 files:
   - text: Paper
     type: pdf
@@ -72,7 +72,33 @@ files:
     src: foo.bib
 ```
 
-``` paper
+``` yaml {.papers}
+papers:
+  - title: Yet another yaml parser 2
+    authors: Templato Urnehm
+    venue: Proceedings of Nihilism
+    year: 2027
+    files:
+      - text: Paper
+        type: pdf
+        scr: foo.pdf
+      - text: Bibtex
+        type: bib
+        src: foo.bib
+  - title: Yet another yaml parser
+    authors: Templato Urnehm
+    venue: Proceedings of Nihilism
+    year: 2025
+    files:
+      - text: Paper
+        type: pdf
+        scr: foo.pdf
+      - text: Bibtex
+        type: bib
+        src: foo.bib
+```
+
+``` json {.paper}
 "title": "How to tame your wagon",
 "authors": "Templato Urnehm",
 "venue": "Journal of Automatic Rejection (JAR)",
@@ -81,7 +107,7 @@ files:
 
 ## Drafts
 
-```paper
+``` json {.paper}
 "title": "TBD",
 "authors": "TBD",
 "files": [
@@ -96,7 +122,7 @@ files:
 
 ## Talks
 
-``` papers
+``` json {.papers}
 {
   "title": "Talk 1",
   "authors": "Templato Urnehm",
