@@ -23,7 +23,17 @@ function yamldata(data)
   -- A bit ridiculous to do this to get strings
   newdata.venue = pandoc.write(pandoc.Pandoc{data["venue"]}, 'html')
   newdata.year = pandoc.write(pandoc.Pandoc{data["year"]}, 'html')
-  newdata.files = data["files"] or pandoc.List()
+  local files = data["files"] or pandoc.List()
+
+  newdata.files = files:map(function(data)
+    local newfile = {}
+
+    newfile.text = pandoc.write(pandoc.Pandoc{data.text}, 'html')
+    newfile.type = pandoc.write(pandoc.Pandoc{data.type}, 'html')
+    newfile.src = pandoc.write(pandoc.Pandoc{data.src}, 'html')
+
+    return newfile
+  end)
 
   return newdata
 

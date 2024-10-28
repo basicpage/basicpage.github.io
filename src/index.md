@@ -63,6 +63,13 @@ title: Yet another yaml parser
 authors: Templato Urnehm
 venue: Proceedings of Nihilism
 year: 2025
+files:
+  - text: Paper
+    type: pdf
+    scr: foo.pdf
+  - text: Bibtex
+    type: bib
+    src: foo.bib
 ```
 
 ``` paper
