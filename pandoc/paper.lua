@@ -17,10 +17,10 @@ function yamldata(data)
 
   local newdata = {}
 
-  newdata.title = data["title"] or {}
-  newdata.url = data["url"] or ""
-  newdata.authors = data["authors"] or {}
   -- A bit ridiculous to do this to get strings
+  newdata.title = pandoc.write(pandoc.Pandoc{data["title"]}, 'html')
+  newdata.url = pandoc.write(pandoc.Pandoc{data["url"]}, 'html')
+  newdata.authors = data["authors"] or {}
   newdata.venue = pandoc.write(pandoc.Pandoc{data["venue"]}, 'html')
   newdata.year = pandoc.write(pandoc.Pandoc{data["year"]}, 'html')
   local files = data["files"] or pandoc.List()
@@ -50,7 +50,7 @@ function paper(data)
 
   local header = {}
 
-  if url then
+  if url and not (url == "") then
     header = { pandoc.Link(title, url) }
   else
     header = { title }

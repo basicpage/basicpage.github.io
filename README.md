@@ -106,6 +106,7 @@ For instance:
 title: Yet another yaml parser 3
 authors: Templato Urnehm
 venue: Proceedings of Nihilism
+url: https://basicpage.github.io
 year: 2029
 files:
   - text: Paper

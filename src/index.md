@@ -63,6 +63,7 @@ title: Yet another yaml parser 3
 authors: Templato Urnehm
 venue: Proceedings of Nihilism
 year: 2029
+url: https://basicpage.github.io
 files:
   - text: Paper
     type: pdf
