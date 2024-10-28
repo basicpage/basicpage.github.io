@@ -17,19 +17,18 @@ function yamldata(data)
 
   local newdata = {}
 
-  -- A bit ridiculous to do this to get strings
-  newdata.title = pandoc.write(pandoc.Pandoc{data["title"]}, 'html')
+  newdata.title = pandoc.utils.stringify(data["title"])
   newdata.url = pandoc.write(pandoc.Pandoc{data["url"]}, 'html')
   newdata.authors = data["authors"] or {}
-  newdata.venue = pandoc.write(pandoc.Pandoc{data["venue"]}, 'html')
-  newdata.year = pandoc.write(pandoc.Pandoc{data["year"]}, 'html')
+  newdata.venue = pandoc.utils.stringify(data["venue"])
+  newdata.year = pandoc.utils.stringify(data["year"])
   local files = data["files"] or pandoc.List()
 
   newdata.files = files:map(function(data)
     local newfile = {}
 
-    newfile.text = pandoc.write(pandoc.Pandoc{data.text}, 'html')
-    newfile.type = pandoc.write(pandoc.Pandoc{data.type}, 'html')
+    newfile.text = pandoc.utils.stringify(data.text)
+    newfile.type = pandoc.utils.stringify(data.type)
     newfile.src = pandoc.write(pandoc.Pandoc{data.src}, 'html')
 
     return newfile
