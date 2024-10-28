@@ -1,28 +1,62 @@
+function jsondata(data)
+
+  local newdata = {}
+
+  newdata.title = data.title or {}
+  newdata.url = data.url or ""
+  newdata.authors = data.authors or {}
+  if data.venue then
+    newdata.venue = pandoc.Str(data.venue)
+  end
+  if data.year then
+    newdata.year = pandoc.Str(data.year)
+  end
+  newdata.files = data.files or pandoc.List()
+
+  return newdata
+
+end
+
+function yamldata(data)
+
+  local newdata = {}
+
+  newdata.title = data["title"] or {}
+  newdata.url = data["url"] or ""
+  newdata.authors = data["authors"] or {}
+  newdata.venue = data["venue"]
+  newdata.year = data["year"]
+  newdata.files = data["files"] or pandoc.List()
+
+  return newdata
+
+end
+
 function paper(data)
 
-  local title = data.title or ""
+  local title = data.title
   local url = data.url
-  local authors = data.authors or ""
+  local authors = data.authors
   local venue = data.venue
   local year = data.year
-  local files = data.files or pandoc.List()
+  local files = data.files
 
   local header = {}
 
   if url then
     header = { pandoc.Link(title, url) }
   else
-    header = { pandoc.Str(title) }
+    header = { title }
   end
 
   local sub = {}
 
   if venue and year then
-    sub = { pandoc.Str(string.format("%s (%s)", venue, year)) }
+    sub = { venue, pandoc.Str(","), year }
   elseif venue then
-    sub = { pandoc.Str(venue) }
+    sub = { venue }
   elseif year then
-    sub = { pandoc.Str(year) }
+    sub = { year }
   end
 
   local file_info = files:map(function(data)
@@ -62,8 +96,8 @@ function paper(data)
 
   local div_content = {
     pandoc.Header(3, header),
-    pandoc.Para({pandoc.Str(authors)}, {class = "authors"}),
-    pandoc.Para(sub),
+    pandoc.Div(authors, {class = "authors"}),
+    pandoc.Div(sub),
     pandoc.Div(file_info, {class = "files"})
   }
 
@@ -75,6 +109,18 @@ end
 
 function CodeBlock(el)
 
+  if el.classes[1] == "paper" and el.classes[2] == "yaml" then
+    local content = string.format("---\n%s\n---", el.text)
+
+    local doc = pandoc.read(content)
+
+    if not doc then
+      error("Failed to decode yaml:\n" .. content)
+    end
+
+    return paper(yamldata(doc.meta))
+  end
+
   if el.classes[1] == "paper" then
     local content = string.format("{ %s }", el.text)
 
@@ -84,7 +130,7 @@ function CodeBlock(el)
       error("Failed to decode JSON:\n" .. content)
     end
 
-    return paper(data)
+    return paper(jsondata(data))
   end
 
   if el.classes[1] == "papers" then
@@ -97,7 +143,7 @@ function CodeBlock(el)
     end
 
     local content = data:map(function(d)
-      return paper(d)
+      return paper(jsondata(d))
     end)
 
     return pandoc.Blocks(content)

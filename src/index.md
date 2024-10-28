@@ -58,6 +58,13 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 
 ## Journal papers
 
+``` yaml {.paper}
+title: Yet another yaml parser
+authors: Templato Urnehm
+venue: Proceedings of Nihilism
+year: 2025
+```
+
 ``` paper
 "title": "How to tame your wagon",
 "authors": "Templato Urnehm",
