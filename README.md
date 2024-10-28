@@ -97,10 +97,30 @@ description.
 
 ## Papers
 
-We provide some tools to input your publications and drafts in JSON format.
+We provide some tools to input your publications and drafts either in JSON
+or YAML formats.
+
 For instance:
-````json
-``` paper
+````markdown
+``` yaml {.paper}
+title: Yet another yaml parser 3
+authors: Templato Urnehm
+venue: Proceedings of Nihilism
+year: 2029
+files:
+  - text: Paper
+    type: pdf
+    scr: foo.pdf
+  - text: Bibtex
+    type: bib
+    src: foo.bib
+```
+````
+
+or
+
+````markdown
+```json {.paper}
 "title": "Towards automatic academic pages",
 "authors": "Templato Urnehm, U. N. Owen",
 "venue": "Principles of Awesomeness (PAW)",
@@ -120,7 +140,8 @@ For instance:
 
 > [!TIP]
 > You can input multiple files at once by using `papers` (with an `s`) instead
-> of `paper`. In that case, papers must be bracketed properly.
+> of `paper`. In that case, papers must be bracketed properly, and the way to do
+> so differs in YAML and JSON.
 > Have a look at `index.md` to see how it's done.
 
 The file that handles papers is `pandoc/paper.lua` and you may modify it to suit
