@@ -5,12 +5,8 @@ function jsondata(data)
   newdata.title = data.title or {}
   newdata.url = data.url or ""
   newdata.authors = data.authors or {}
-  if data.venue then
-    newdata.venue = pandoc.Str(data.venue)
-  end
-  if data.year then
-    newdata.year = pandoc.Str(data.year)
-  end
+  newdata.venue = data.venue
+  newdata.year = data.year
   newdata.files = data.files or pandoc.List()
 
   return newdata
@@ -24,8 +20,9 @@ function yamldata(data)
   newdata.title = data["title"] or {}
   newdata.url = data["url"] or ""
   newdata.authors = data["authors"] or {}
-  newdata.venue = data["venue"]
-  newdata.year = data["year"]
+  -- A bit ridiculous to do this to get strings
+  newdata.venue = pandoc.write(pandoc.Pandoc{data["venue"]}, 'html')
+  newdata.year = pandoc.write(pandoc.Pandoc{data["year"]}, 'html')
   newdata.files = data["files"] or pandoc.List()
 
   return newdata
@@ -52,7 +49,7 @@ function paper(data)
   local sub = {}
 
   if venue and year then
-    sub = { venue, pandoc.Str(","), year }
+    sub = { pandoc.Str(string.format("%s (%s)", venue, year)) }
   elseif venue then
     sub = { venue }
   elseif year then
@@ -97,7 +94,7 @@ function paper(data)
   local div_content = {
     pandoc.Header(3, header),
     pandoc.Div(authors, {class = "authors"}),
-    pandoc.Div(sub),
+    pandoc.Para(sub),
     pandoc.Div(file_info, {class = "files"})
   }
 
