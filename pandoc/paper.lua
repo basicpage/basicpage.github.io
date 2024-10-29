@@ -88,6 +88,10 @@ function paper(data)
       icon = "<i class=\"fa-solid fa-file-zipper\"></i>"
     elseif type == "slides" then
       icon = "<i class=\"fa-solid fa-file-powerpoint\"></i>"
+    elseif type == "link" then
+      icon = "<i class=\"fa-solid fa-link\"></i>"
+    elseif type == "git" then
+      icon = "<i class=\"fa-brands fa-git-alt\"></i>"
     else
       icon = "<i class=\"fa-solid fa-file\"></i>"
     end

@@ -98,6 +98,12 @@ papers:
       - text: Bibtex
         type: bib
         src: foo.bib
+      - text: Some link
+        type: link
+        src: fake.link.xyz
+      - text: Repo
+        type: git
+        src: github.com
 ```
 
 ``` json {.paper}

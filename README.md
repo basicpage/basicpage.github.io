@@ -178,6 +178,8 @@ assume them to be empty otherwise), while the other fields (`venue`, `year`,
     * `img`
     * `zip`
     * `slides`
+    * `link`
+    * `git`
 
 ## Sharing files
 
