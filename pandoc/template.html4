@@ -118,6 +118,11 @@
           <i class="fa-brands fa-gitlab fa-fw"></i>
         </a>
         $endif$
+        $if(bitbucket)$
+        <a href="$bitbucket$" title="BitBucket">
+          <i class="fa-brands fa-bitbucket fa-fw"></i>
+        </a>
+        $endif$
         $if(bluesky)$
         <a href="$bluesky$" title="BlueSky">
           <i class="fa-brands fa-bluesky fa-fw"></i>

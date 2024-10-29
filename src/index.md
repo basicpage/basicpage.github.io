@@ -18,6 +18,7 @@ hal: https://hal.science/
 mastodon: https://lipn.info
 github: basicpage
 gitlab: gitlab.com
+bitbucket: bitbucket.com
 bluesky: https://bsky.app/
 linkedin: https://www.linkedin.com
 ---

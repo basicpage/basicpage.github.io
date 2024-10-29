@@ -79,8 +79,6 @@ description.
 
 ### Social and academic accounts
 
-- `github`: Username to your Github account.
-
 - `orcid`: Your ORCID number (in the shape `0000-0000-0000-0000`).
 
 - `dblp`: *URL* to your DBLP page.
@@ -89,9 +87,13 @@ description.
 
 - `hal`: *URL* to your HAL page.
 
-- `mastodon`: *URL* to your Mastodon account.
+- `github`: Username to your Github account.
 
 - `gitlab`: Username to your Gitlab account.
+
+- `bitbucket`: *URL* to your BitBucket account.
+
+- `mastodon`: *URL* to your Mastodon account.
 
 - `bluesky`: *URL* to your BlueSky account.
 
