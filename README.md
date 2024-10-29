@@ -95,6 +95,8 @@ description.
 
 - `bluesky`: *URL* to your BlueSky account.
 
+- `linkedin`: *URL* to your LinkedIn account.
+
 ## Papers
 
 We provide some tools to input your publications and drafts either in JSON

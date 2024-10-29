@@ -8,7 +8,7 @@ location: Some lab, office 777
 email: noreply@noemail.com
 picture: img/profile.png
 picture-round: false
-side-by-side: false
+side-by-side: true
 pronouns: They/Them
 og-picture: https://basicpage.github.io/img/profile.png
 orcid: 0000-0000-0000-0000
@@ -19,6 +19,7 @@ mastodon: https://lipn.info
 github: basicpage
 gitlab: gitlab.com
 bluesky: https://bsky.app/
+linkedin: https://www.linkedin.com
 ---
 
 I am a (fake) PhD student, working on 👽 science on all kinds of related topics.

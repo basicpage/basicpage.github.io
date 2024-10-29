@@ -123,6 +123,11 @@
           <i class="fa-brands fa-bluesky fa-fw"></i>
         </a>
         $endif$
+        $if(linkedin)$
+        <a href="$linkedin$" title="LinkedIn">
+          <i class="fa-brands fa-linkedin fa-fw"></i>
+        </a>
+        $endif$
       </div>
     </aside>
   </header>
