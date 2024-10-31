@@ -20,8 +20,12 @@ function yamldata(data)
   newdata.title = pandoc.utils.stringify(data["title"])
   newdata.url = pandoc.write(pandoc.Pandoc{data["url"]}, 'html')
   newdata.authors = data["authors"] or {}
-  newdata.venue = pandoc.utils.stringify(data["venue"])
-  newdata.year = pandoc.utils.stringify(data["year"])
+  if data.venue then
+    newdata.venue = pandoc.utils.stringify(data["venue"])
+  end
+  if data.year then
+    newdata.year = pandoc.utils.stringify(data["year"])
+  end
   local files = data["files"] or pandoc.List()
 
   newdata.files = files:map(function(data)
