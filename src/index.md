@@ -21,6 +21,7 @@ gitlab: gitlab.com
 bitbucket: bitbucket.com
 bluesky: https://bsky.app/
 linkedin: https://www.linkedin.com
+footer: Based on the [basicpage template](https://github.com/basicpage/basicpage.github.io), made to be easy to use! 🎓
 ---
 
 I am a (fake) PhD student, working on 👽 science on all kinds of related topics.

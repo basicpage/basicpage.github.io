@@ -62,6 +62,11 @@ We give the semantics of the various fields (all of whom are optional).
 
 - `pronouns`: A string to show your pronouns.
 
+- `footer`: Some data to put in the footer of the page. You can use it to put
+  some disclaimer, or maybe to advertise basicpage. ☺️
+  If nothing is provided, then the footer doesn't appear, and thus the
+  horizontal that precedes is will not show either.
+
 ### OpenGraph
 
 OpenGraph carries information that used by social media and messaging app to

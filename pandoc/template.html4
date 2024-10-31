@@ -152,5 +152,10 @@
     $include-after$
     $endfor$
   </main>
+  $if(footer)$
+  <footer>
+    $footer$
+  </footer>
+  $endif$
 </body>
 </html>
