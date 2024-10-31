@@ -344,4 +344,8 @@ div.files a:hover {
   header.split h1, header.split h2, header.split p {
     text-align: left;
   }
+
+  header div.icons {
+    justify-content: left;
+  }
 }
