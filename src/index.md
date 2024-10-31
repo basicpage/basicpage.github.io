@@ -17,7 +17,7 @@ scholar: https://scholar.google.com/
 hal: https://hal.science/
 mastodon: https://lipn.info
 github: basicpage
-gitlab: gitlab.com
+gitlab: gitlab
 bitbucket: bitbucket.com
 bluesky: https://bsky.app/
 linkedin: https://www.linkedin.com
