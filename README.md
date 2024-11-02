@@ -1,9 +1,12 @@
 # basicpage.github.io
 
-Template for a really basic academic page.
-In the style of
+Template for a basic academic page that is ready to use and easy to customise.
+
+<img width="1440" alt="Screenshot 2024-11-02 at 19 39 34" src="https://github.com/user-attachments/assets/34d4b1f7-3212-4081-b9aa-ded0d0963d89">
+
+It is close in style to
 [academicpages](https://github.com/academicpages/academicpages.github.io)
-but producing something much simpler.
+but is entirely independent.
 
 ## Getting started
 
