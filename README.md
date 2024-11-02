@@ -8,6 +8,8 @@ It is also **responsive** by default!
 
 <img width="334" alt="Screenshot 2024-11-02 at 19 43 24" src="https://github.com/user-attachments/assets/d5efbc5b-0385-4640-9397-563396400c55">
 
+It relies on [FontAwesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/) to display nice icons.
+
 It is close in style to
 [academicpages](https://github.com/academicpages/academicpages.github.io)
 but is entirely independent.
