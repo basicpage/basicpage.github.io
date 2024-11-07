@@ -335,6 +335,10 @@ div.files a:hover {
   text-decoration: none;
 }
 
+span.lastupdate {
+  color: #9e9d9d;
+}
+
 @media screen and (min-width: 1000px) {
   header.split {
     flex-direction: row;

@@ -10,4 +10,5 @@ website:
          --toc-depth=1 \
          --resource-path=. \
          --lua-filter=pandoc/paper.lua \
+         --lua-filter=pandoc/date.lua \
          src/index.md

@@ -197,6 +197,20 @@ assume them to be empty otherwise), while the other fields (`venue`, `year`,
     * `link`
     * `git`
 
+## Updating the HTML template
+
+The `pandoc/template.html4` file contains an HTML template which you can edit
+to suit your taste. Any variable mentioned in the header of your `index.md` can
+be moved around, and you can even add your own.
+
+There is also a special filter called `pandoc/date.lua` which produces an extra
+variable called `date` (unless it is already provided in the header) that is
+currently used in the footer of the template to indicate the last time the page
+was generated.
+
+> [!NOTE]
+> It will only appear in the footer if the `footer` variable is set.
+
 ## Sharing files
 
 Anything you put in the `website` directory will be available online too.

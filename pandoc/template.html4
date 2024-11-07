@@ -159,6 +159,8 @@
   $if(footer)$
   <footer>
     $footer$
+
+    <span class="lastupdate">Last updated: $date$</span>
   </footer>
   $endif$
 </body>
