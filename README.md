@@ -26,8 +26,15 @@ but is entirely independent.
 > If you don't have Github Pro (which you can get with the students programme)
 > then your repository must be public for it to work.
 
-- Now go to "Settings" then click "Pages" on the left and select
+- Now go to the repository "Settings" then click "Pages" on the left and select
   "Github Actions" instead of "Deploy from a branch" for "Source".
+  
+  <img width="837" alt="Screenshot 2024-11-27 at 16 51 07" src="https://github.com/user-attachments/assets/7219187c-7370-42dd-a9cf-c7559072b42f">
+
+  <img width="304" alt="Screenshot 2024-11-27 at 16 52 45" src="https://github.com/user-attachments/assets/9af6698f-2c47-422f-8dff-61ee3629089e">
+
+  <img width="243" alt="Screenshot 2024-11-27 at 16 52 59" src="https://github.com/user-attachments/assets/ac68143a-8e3b-4cca-9030-ae0af77d898f">
+
 
 - Fill the contents of `index.md` to your liking and it should just work.
 
