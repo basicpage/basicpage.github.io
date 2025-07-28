@@ -8,6 +8,7 @@ function jsondata(data)
   newdata.venue = data.venue
   newdata.year = data.year
   newdata.files = data.files or pandoc.List()
+  newdata.awards = data.awards or pandoc.List()
 
   return newdata
 
@@ -38,6 +39,15 @@ function yamldata(data)
     return newfile
   end)
 
+  local awards = data["awards"] or pandoc.List()
+  if pandoc.utils.type(awards) == 'List' then
+    newdata.awards = awards:map(function(data)
+      return pandoc.utils.stringify(data)
+    end)
+  else
+    newdata.awards = pandoc.utils.stringify(awards)
+  end
+
   return newdata
 
 end
@@ -47,6 +57,7 @@ function paper(data)
   local title = data.title
   local url = data.url
   local authors = data.authors
+  local awards = data.awards
   local venue = data.venue
   local year = data.year
   local files = data.files
@@ -57,6 +68,22 @@ function paper(data)
     header = { pandoc.Link(title, url) }
   else
     header = { title }
+  end
+
+  local award_info = {}
+  if awards then
+    if not (pandoc.utils.type(awards) == 'List') then
+      awards = pandoc.List({awards})
+    end
+    award_info = awards:map(function(awd)
+      local icon = "<i class=\" fa-solid fa-award\"></i>"
+
+      local html_output = string.format(
+        "<span>%s %s</span>",
+          icon, awd
+      )
+      return pandoc.RawBlock("html", html_output)
+    end)
   end
 
   local sub = {}
@@ -110,6 +137,7 @@ function paper(data)
 
   local div_content = {
     pandoc.Header(3, header),
+    pandoc.Div(award_info, {class = "awards"}),
     pandoc.Div(authors, {class = "authors"}),
     pandoc.Para(sub),
     pandoc.Div(file_info, {class = "files"})
