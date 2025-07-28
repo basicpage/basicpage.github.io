@@ -52,6 +52,7 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 ``` json {.paper}
 "title": "Towards automatic academic pages",
 "authors": "Templato Urnehm, U. N. Owen",
+"awards": "Automatic Award",
 "venue": "Principles of Awesomeness (PAW)",
 "year": "2023",
 "url": "https://basicpage.github.io",
@@ -67,6 +68,9 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 ``` yaml {.paper}
 title: Yet another yaml parser 3
 authors: Templato Urnehm
+awards: 
+  - Yet another "Yet another" award
+  - Never-ending Work Award
 venue: Proceedings of Nihilism
 year: 2029
 url: https://basicpage.github.io
@@ -94,6 +98,7 @@ papers:
         src: foo.bib
   - title: Yet another yaml parser
     authors: Templato Urnehm
+    awards: Yet another "Yet another" award
     venue: Proceedings of Nihilism
     year: 2025
     files:
@@ -123,6 +128,10 @@ papers:
 ``` json {.paper}
 "title": "TBD",
 "authors": "TBD",
+"awards": [
+  "Best Draft Award",
+  "Test-of-time Award for works which just never leave the draft stage"
+],
 "files": [
   { "text": "🐱 video", "type": "video", "src": "foo.mov" },
   { "text": "Poem", "type": "txt", "src": "foo.txt" },
