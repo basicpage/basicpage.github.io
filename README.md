@@ -177,6 +177,8 @@ assume them to be empty otherwise), while the other fields (`venue`, `year`,
 
 - `title`: Title of your paper. Will be used as header of the block.
 - `authors`: List of authors.
+- `awards` (optional, string or list of string): Award(s) that your paper may
+  have received.
 - `venue` (optional): Journal or conference.
 - `year` (optional): Date of the conference, if present it is going to be in
   parentheses after the venue (unless the venue is absent in which case it

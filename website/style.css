@@ -335,6 +335,23 @@ div.files a:hover {
   text-decoration: none;
 }
 
+div.awards {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 5px 0;
+}
+
+div.awards span {
+  border-radius: 5px;
+  padding: 4px;
+  margin-right: 5px;
+  background: #F6ECD0;
+  color: #CF9C11;
+}
+
 span.lastupdate {
   color: #9e9d9d;
 }
