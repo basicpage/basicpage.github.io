@@ -62,6 +62,8 @@ We give the semantics of the various fields (all of whom are optional).
   words. It will appear below your name.
 
 - `email`: Your email. It will appear next to an envelope in monospace font.
+  - `clickable-email`: Whether your email should be a `mailto:` hyperlink,
+    allowing users to open it in their email client by clicking on it.
 
 - `location`: Information about your location (university, office, …).
   It will appear next to a pin icon.

@@ -85,7 +85,7 @@
       $endif$
       $if(email)$
       $for(email)$
-      <p><a href="mailto:$email$"><i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code></a></p>
+      <p>$if(clickable-email)$<a href="mailto:$email$">$endif$<i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code>$if(clickable-email)$</a>$endif$</p>
       $endfor$
       $endif$
       <div class="icons">

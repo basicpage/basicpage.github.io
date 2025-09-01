@@ -6,6 +6,7 @@ description-meta: PhD student in 👽 science
 og-url: https://basicpage.github.io
 location: Some lab, office 777
 email: noreply@noemail.com
+clickable-email: false
 picture: img/profile.png
 picture-round: false
 side-by-side: true
