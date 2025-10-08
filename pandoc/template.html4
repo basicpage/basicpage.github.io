@@ -84,7 +84,13 @@
       <p><i class="fa-solid fa-location-dot fa-fw"></i> $location$</p>
       $endif$
       $if(email)$
-      <p><i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code></p>
+      $for(email)$
+      <p>
+        $if(clickable-email)$<a href="mailto:$email$">$endif$
+          <i class="fa-regular fa-envelope fa-fw"></i> <code>$email$</code>
+        $if(clickable-email)$</a>$endif$
+      </p>
+      $endfor$
       $endif$
       <div class="icons">
         $if(orcid)$
