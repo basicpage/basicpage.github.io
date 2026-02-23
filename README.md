@@ -8,11 +8,16 @@ It is also **responsive** by default!
 
 <img width="334" alt="Screenshot of the mobile version" src="https://github.com/user-attachments/assets/d5efbc5b-0385-4640-9397-563396400c55">
 
+Basicpage supports dark mode by default as well.
+
+<img width="1189" height="811" alt="Screenshot of the dark mode version" src="https://github.com/user-attachments/assets/2321ebd0-e5c0-4db6-bb70-67de15a35697" />
+
 It relies on [FontAwesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/) to display nice icons.
 
 It is close in style to
 [academicpages](https://github.com/academicpages/academicpages.github.io)
 but is entirely independent.
+
 
 ## Getting started
 
@@ -223,8 +228,11 @@ However, there is at least a way to keep your repo up-to-date with respect to
 Github Pages by using Dependabot.
 
 For this, go to the settings of your repository, select "Advanced security":
+
 <img width="326" height="175" alt="Advanced security link screenshot" src="https://github.com/user-attachments/assets/20736fd4-3b72-47b1-ada0-4ccb4e5e9e7e" />
+
 and then enable security updates:
+
 <img width="767" height="97" alt="Screenshot showing enabled security updates with dependabot" src="https://github.com/user-attachments/assets/4aa04354-77d6-41aa-bad9-c2cb10b4c069" />
 
 
