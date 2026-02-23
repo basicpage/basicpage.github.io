@@ -2,11 +2,11 @@
 
 **Template for a basic academic page that is ready to use and easy to customise.**
 
-<img width="1440" alt="Screenshot 2024-11-02 at 19 39 34" src="https://github.com/user-attachments/assets/34d4b1f7-3212-4081-b9aa-ded0d0963d89">
+<img width="1440" alt="Screenshot of desktop version" src="https://github.com/user-attachments/assets/34d4b1f7-3212-4081-b9aa-ded0d0963d89">
 
 It is also **responsive** by default!
 
-<img width="334" alt="Screenshot 2024-11-02 at 19 43 24" src="https://github.com/user-attachments/assets/d5efbc5b-0385-4640-9397-563396400c55">
+<img width="334" alt="Screenshot of the mobile version" src="https://github.com/user-attachments/assets/d5efbc5b-0385-4640-9397-563396400c55">
 
 It relies on [FontAwesome](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/) to display nice icons.
 
@@ -29,11 +29,11 @@ but is entirely independent.
 - Now go to the repository "Settings" then click "Pages" on the left and select
   "Github Actions" instead of "Deploy from a branch" for "Source".
 
-  <img width="837" alt="Screenshot 2024-11-27 at 16 51 07" src="https://github.com/user-attachments/assets/7219187c-7370-42dd-a9cf-c7559072b42f">
+  <img width="837" alt="Screenshot of clicking on settings" src="https://github.com/user-attachments/assets/7219187c-7370-42dd-a9cf-c7559072b42f">
 
-  <img width="304" alt="Screenshot 2024-11-27 at 16 52 45" src="https://github.com/user-attachments/assets/9af6698f-2c47-422f-8dff-61ee3629089e">
+  <img width="304" alt="Screenshot, clicking on pages" src="https://github.com/user-attachments/assets/9af6698f-2c47-422f-8dff-61ee3629089e">
 
-  <img width="243" alt="Screenshot 2024-11-27 at 16 52 59" src="https://github.com/user-attachments/assets/ac68143a-8e3b-4cca-9030-ae0af77d898f">
+  <img width="243" alt="Screenshot, selecting Github Actions for page deployment" src="https://github.com/user-attachments/assets/ac68143a-8e3b-4cca-9030-ae0af77d898f">
 
 
 - Fill the contents of `index.md` to your liking and it should just work.
@@ -214,6 +214,19 @@ assume them to be empty otherwise), while the other fields (`venue`, `year`,
     * `slides`
     * `link`
     * `git`
+
+## Staying up-to-date with Dependabot
+
+There is no way to sync your repo with the template so you would need to manually 
+import new features from here.
+However, there is at least a way to keep your repo up-to-date with respect to
+Github Pages by using Dependabot.
+
+For this, go to the settings of your repository, select "Advanced security":
+<img width="326" height="175" alt="Advanced security link screenshot" src="https://github.com/user-attachments/assets/20736fd4-3b72-47b1-ada0-4ccb4e5e9e7e" />
+and then enable security updates:
+<img width="767" height="97" alt="Screenshot showing enabled security updates with dependabot" src="https://github.com/user-attachments/assets/4aa04354-77d6-41aa-bad9-c2cb10b4c069" />
+
 
 ## Updating the HTML template
 
