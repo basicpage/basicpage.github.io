@@ -48,6 +48,12 @@ You have the power of Markdown, powered by Pandoc to let you do what you want.
   1. Ordered if one wants.
   2. And so on…
 
+> [!TIP]
+> The way this page is structured is only a suggestion, and you are basically
+> free to customise everything however you want. For the more advanced
+> customisation you might need to now very basic CSS and/or HTML, but that's it
+> because we do not rely on any heavy machinery.
+
 # Publications
 
 This template provide JSON or Yaml parsers to handle data representing
