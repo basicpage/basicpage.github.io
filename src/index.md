@@ -1,17 +1,17 @@
 ---
-title: Template homepage
-author: Templato Urnehm
-shortbio: PhD student in 👽 science
-description-meta: PhD student in 👽 science
+title: Basicpage template
+author: Your Name
+shortbio: Short bio
+description-meta: Short bio for meta-data
 og-url: https://basicpage.github.io
-location: Some lab, office 777
+location: Location, office
 email: noreply@noemail.com
 clickable-email: false
 picture: img/profile.png
 picture-round: false
 side-by-side: true
 disable-dark-mode: false
-pronouns: They/Them
+pronouns: Pronouns
 og-picture: https://basicpage.github.io/img/profile.png
 orcid: 0000-0000-0000-0000
 dblp: https://dblp.org/
@@ -29,17 +29,29 @@ footer: >-
   made to be easy to use! 🎓
 ---
 
-I am a (fake) PhD student, working on 👽 science on all kinds of related topics.
-
-My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
-<kbd>Ctrl</kbd> + <kbd>V</kbd>. 🫣
-
 > [!NOTE]
-> This website is obviously a fake one, but it's meant to be very easy to use.
+> This website is an example of what one can get with the `basicpage` template
+> designed for easy-to-create personal academic page.
+> You are only required to know a little bit of Markdown to get started!
 > Just follow the README of the
 > [Github repository](https://github.com/basicpage/basicpage.github.io).
 
+Here you would write a longer presentation of yourself and your research
+interest, or anything you want really.
+
+You have the power of Markdown, powered by Pandoc to let you do what you want.
+- Unordered lists.
+- *Italic*.
+- **Bold**.
+- Key display: <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+- Sublists.
+  1. Ordered if one wants.
+  2. And so on…
+
 # Publications
+
+This template provide JSON or Yaml parsers to handle data representing
+publications to put them in the nice following shape.
 
 ## Conference papers
 
@@ -167,16 +179,12 @@ papers:
 
 # Education
 
-- I was able to paint with my hands in kindergarten.
-- I went to high school where I studied stuff.
-- Master degree in hand painting.
+Write whatever you want here.
 
 # Teaching
 
-- I am teaching the TD sessions on the 👽 science course.
+Write whatever you want here.
 
 # Community service
 
-- 32 reviews for Journal of Awesomeness.
-- 1 review for a cool conference.
-- PC member of the journal of my school.
+Write whatever you want here.
