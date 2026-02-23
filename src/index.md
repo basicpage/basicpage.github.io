@@ -10,6 +10,7 @@ clickable-email: false
 picture: img/profile.png
 picture-round: false
 side-by-side: true
+disable-dark-mode: false
 pronouns: They/Them
 og-picture: https://basicpage.github.io/img/profile.png
 orcid: 0000-0000-0000-0000
@@ -69,7 +70,7 @@ My workflow is usually to use <kbd>Ctrl</kbd> + <kbd>C</kbd> /
 ``` yaml {.paper}
 title: Yet another yaml parser 3
 authors: Templato Urnehm
-awards: 
+awards:
   - Yet another "Yet another" award
   - Never-ending Work Award
 venue: Proceedings of Nihilism

@@ -28,7 +28,7 @@ but is entirely independent.
 
 - Now go to the repository "Settings" then click "Pages" on the left and select
   "Github Actions" instead of "Deploy from a branch" for "Source".
-  
+
   <img width="837" alt="Screenshot 2024-11-27 at 16 51 07" src="https://github.com/user-attachments/assets/7219187c-7370-42dd-a9cf-c7559072b42f">
 
   <img width="304" alt="Screenshot 2024-11-27 at 16 52 45" src="https://github.com/user-attachments/assets/9af6698f-2c47-422f-8dff-61ee3629089e">
@@ -82,9 +82,15 @@ We give the semantics of the various fields (all of whom are optional).
 - `pronouns`: A string to show your pronouns.
 
 - `footer`: Some data to put in the footer of the page. You can use it to put
-  some disclaimer, or maybe to advertise basicpage. ☺️
+  some disclaimer, or maybe to advertise `basicpage`. ☺️
   If nothing is provided, then the footer doesn't appear, and thus the
   horizontal that precedes is will not show either.
+
+- `disable-dark-mode`: A Boolean deciding whether the page automatically
+  switches to dark mode based on browser settings. It will load the `dark.css`
+  CSS file.
+  By default, this setting is `false`, meaning dark mode will automatically
+  activate.
 
 ### OpenGraph
 

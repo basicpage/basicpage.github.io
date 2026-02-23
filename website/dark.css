@@ -1,0 +1,92 @@
+/*
+
+bg: #1c1d1f
+icons: #739fe7
+links: #d1beb3
+award-bg: #2e2813
+award: #cf9c10
+
+*/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #424242;
+    color: #f4ebdb;
+  }
+
+  a {
+    color: #91c1ff;
+  }
+
+  div.tip {
+    border-left: 4px solid #45df45;
+    padding-left: 10px;
+  }
+
+  div.tip > div.title p {
+    color: #45df45;
+  }
+
+  div.important {
+    border-left: 4px solid rgb(192, 51, 228);
+  }
+
+  div.important > div.title p {
+    color: rgb(192, 51, 228);
+  }
+
+  div.warning {
+    border-left: 4px solid rgb(255, 203, 99);
+  }
+
+  div.warning > div.title p {
+    color: rgb(255, 203, 99);
+  }
+
+  div.caution {
+    border-left: 4px solid rgb(255, 104, 134);
+  }
+
+  div.caution > div.title p {
+    color: rgb(255, 104, 134);
+  }
+
+  div.note {
+    border-left: 4px solid #7799ff;
+  }
+
+  div.note > div.title p {
+    color: #7799ff;
+  }
+
+  pre {
+    background-color: #070707;
+  }
+
+  nav ul li a {
+    color: #d1beb3;
+    border-bottom-color: #d1beb3;
+  }
+
+  nav ul li a:hover {
+    color: #d1beb3;
+    border-bottom-color: #d1beb3;
+  }
+
+  table tr {
+    background-color: #414141;
+  }
+
+  table tr:nth-child(2n) {
+    background-color: #4e4e4e;
+  }
+
+  section.paper p {
+    color: rgb(189, 189, 189);
+  }
+
+  div.awards span {
+    background: #2e2813;
+    color: #cf9c10;
+  }
+}

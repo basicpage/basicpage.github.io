@@ -35,6 +35,9 @@
   $for(css)$
   <link rel="stylesheet" href="$css$">
   $endfor$
+  $if(disable-dark-mode)$$else$
+  <link rel="stylesheet" href="dark.css">
+  $endif$
   $if(og-picture)$
   <meta property="og:image" content="$og-picture$">
   $endif$
