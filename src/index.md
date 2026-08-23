@@ -50,13 +50,13 @@ You have the power of Markdown, powered by Pandoc to let you do what you want.
 
 > [!TIP]
 > The way this page is structured is only a suggestion, and you are basically
-> free to customise everything however you want. For the more advanced
+> free to customise everything as you want. For the more advanced
 > customisation you might need to now very basic CSS and/or HTML, but that's it
 > because we do not rely on any heavy machinery.
 
 # Publications
 
-This template provide JSON or Yaml parsers to handle data representing
+This template provides JSON or YAML parsers to handle data representing
 publications to put them in the nice following shape.
 
 ## Conference papers
@@ -86,7 +86,7 @@ publications to put them in the nice following shape.
 ## Journal papers
 
 ``` yaml {.paper}
-title: Yet another yaml parser 3
+title: Yet another YAML parser 3
 authors: Templato Urnehm
 awards:
   - Yet another "Yet another" award
@@ -97,7 +97,7 @@ url: https://basicpage.github.io
 files:
   - text: Paper
     type: pdf
-    scr: foo.pdf
+    src: foo.pdf
   - text: Bibtex
     type: bib
     src: foo.bib
@@ -105,18 +105,18 @@ files:
 
 ``` yaml {.papers}
 papers:
-  - title: Yet another yaml parser 2
+  - title: Yet another YAML parser 2
     authors: Templato Urnehm
     venue: Proceedings of Nihilism
     year: 2027
     files:
       - text: Paper
         type: pdf
-        scr: foo.pdf
+        src: foo.pdf
       - text: Bibtex
         type: bib
         src: foo.bib
-  - title: Yet another yaml parser
+  - title: Yet another YAML parser
     authors: Templato Urnehm
     awards: Yet another "Yet another" award
     venue: Proceedings of Nihilism
@@ -124,7 +124,7 @@ papers:
     files:
       - text: Paper
         type: pdf
-        scr: foo.pdf
+        src: foo.pdf
       - text: Bibtex
         type: bib
         src: foo.bib
